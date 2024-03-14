@@ -1,0 +1,9 @@
+def marquer_tache_terminee(id_tache):
+    # Rechercher la tâche dans la liste des tâches
+    tache = trouver_tache_par_id(id_tache)
+    
+    if tache:
+        tache['terminee'] = True
+        print("La tâche a été marquée comme terminée avec succès.")
+    else:
+        print("La tâche spécifiée n'a pas été trouvée.")
