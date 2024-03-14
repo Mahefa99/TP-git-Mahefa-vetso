@@ -1,0 +1,11 @@
+def add_task(tasks, task):
+    """Adds a new task to the tasks dictionary"""
+    tasks[task] = []
+    return tasks
+
+# Example usage
+tasks = {'Task 1': ['Step 1', 'Step 2']}
+new_task = 'Task 2'
+tasks = add_task(tasks, new_task)
+print(tasks)
+
