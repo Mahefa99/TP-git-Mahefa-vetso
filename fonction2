@@ -1,0 +1,6 @@
+def delete_task(tasks, task_id):
+    try:
+        del tasks[task_id]
+        return True
+    except KeyError:
+        return False
